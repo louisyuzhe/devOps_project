@@ -13,7 +13,7 @@ workflows:
     jobs:
       - build
 
-- run:
+run:
           name: Install Docker Compose
           command: |
             set -x
@@ -23,7 +23,7 @@ workflows:
 - setup_remote_docker
 docker-compose build
 docker-compose up -d
-- run:
+run:
           name: Start container and verify it is working
           command: |
             set -x
