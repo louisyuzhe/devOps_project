@@ -20,7 +20,7 @@ run:
             curl -L https://github.com/docker/compose/releases/download/1.25.3/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
             chmod +x /usr/local/bin/docker-compose
 
-- setup_remote_docker
+setup_remote_docker
 docker-compose build
 docker-compose up -d
 run:
